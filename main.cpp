@@ -20,9 +20,33 @@ int main(int ac, char **av)
  if (ac>1){
 	 cout << "Running with the sample gave in the homework." << endl;
 	 Forest forest;
-	 //forest.add(result[i], result[i+1], result[i+2]);
+	 forest.add(1, 2, 3);
+	 forest.add(1, 5, 2);
+	 forest.add(2, 3, 1);
+	 forest.add(2, 6, 5);
+	 forest.add(3, 4, 4);
+	 forest.add(3, 7, 1);
+	 forest.add(4, 8, 6);
+	 forest.add(5, 6, 1);
+	 forest.add(5, 9, 3);
+	 forest.add(6, 7, 5);
+	 forest.add(6, 10, 4);
+	 forest.add(7, 8, 8);
+	 forest.add(7, 11, 2);
+	 forest.add(8, 12, 6);
+	 forest.add(9, 10, 2);
+	 forest.add(9, 13, 2);
+	 forest.add(10, 11, 4);
+	 forest.add(10, 14, 6);
+	 forest.add(11, 12, 6);
+	 forest.add(11, 15, 4);
+	 forest.add(12, 16, 4);
+	 forest.add(13, 14, 3);
+	 forest.add(14, 15, 5);
+	 forest.add(15, 16, 7);
+
 	 cout << endl << "Results: "  << endl;
-	 //ac = forest.algo(subTree(result.size()));
+	 ac = forest.algo(subTree(24));
 	 cout << endl << "The total weight is " << ac << endl;
 	}
  else {
